@@ -1,7 +1,6 @@
 package de.joshicodes.newlabyapi;
 
 import de.joshicodes.newlabyapi.listener.LabyPluginMessageListener;
-import de.joshicodes.newlabyapi.listener.TestListener;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class NewLabyPlugin extends JavaPlugin {

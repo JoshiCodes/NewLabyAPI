@@ -38,3 +38,17 @@ LabyModAPI.sendPrompt(player, prompt);
 LabyModPlayer labyPlayer = ...
 labyPlayer.sendInputPrompt(prompt);
 ````
+
+## MouseMenuActionList
+Modify the Middle Click Menu of the player.
+[More Information on the LabyMod Docs](https://docs.labymod.net/pages/server/labymod/action_menu/)
+````java
+MouseMenuActionList menu = new MouseMenuActionList();
+menu.addAction(
+        "Report player",
+        MouseMenuActionType.SUGGEST_COMMAND,
+        "/report {player}"
+);
+// Send to player
+labyPlayer.sendActionMenu(menu);
+````
