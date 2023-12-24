@@ -2,3 +2,5 @@ name: NewLabyPlugin
 version: '${project.version}'
 main: de.joshicodes.newlabyapi.NewLabyPlugin
 api-version: '1.20'
+author: JoshiCodes
+website: https://docs.labymod.net/pages/server/introduction/

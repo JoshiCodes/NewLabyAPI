@@ -17,7 +17,7 @@ To use this API in your Plugin, you need to add it as a dependency.
 <dependency>
     <groupId>de.joshicodes</groupId>
     <artifactId>NewLabyAPI</artifactId>
-    <version>1.2.1</version>
+    <version>1.2.2</version>
     <scope>provided</scope>
 </dependency>
 ````
