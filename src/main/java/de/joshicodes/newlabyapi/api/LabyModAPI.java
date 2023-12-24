@@ -42,4 +42,8 @@ public class LabyModAPI {
         player.getServer().getPluginManager().callEvent(event);
     }
 
+    public static void executeLabyModQuit(Player player) {
+        labyModPlayers.remove(player);
+    }
+
 }

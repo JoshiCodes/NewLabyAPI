@@ -1,6 +1,8 @@
 package de.joshicodes.newlabyapi;
 
 import de.joshicodes.newlabyapi.listener.LabyPluginMessageListener;
+import de.joshicodes.newlabyapi.listener.PlayerListener;
+import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class NewLabyPlugin extends JavaPlugin {
@@ -18,6 +20,9 @@ public final class NewLabyPlugin extends JavaPlugin {
 
         getServer().getMessenger().registerIncomingPluginChannel(this, "labymod3:main", new LabyPluginMessageListener());
         getServer().getMessenger().registerOutgoingPluginChannel(this, "labymod3:main");
+
+        PluginManager pluginManager = getServer().getPluginManager();
+        pluginManager.registerEvents(new PlayerListener(), this);
 
     }
 
