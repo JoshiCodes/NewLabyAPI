@@ -1,6 +1,27 @@
 # NewLabyAPI
 ### This is a simple Labymod API for LabyMod 4 for Paper 1.20.2
 
+## Download
+To use this API you need the plugin jar File on your Server.
+You can download the latest file [here](https://github.com/JoshiCodes/NewLabyAPI/releases).
+
+To use this API in your Plugin, you need to add it as a dependency.
+### Maven
+````xml
+<repository>
+    <id>joshicodes-de-releases</id>
+    <name>JoshiCodes Repository</name>
+    <url>https://repo.joshicodes.de/releases</url>
+</repository>
+
+<dependency>
+    <groupId>de.joshicodes</groupId>
+    <artifactId>NewLabyAPI</artifactId>
+    <version>1.2.1</version>
+    <scope>provided</scope>
+</dependency>
+````
+
 ## How to use:
 The [Protocol Util Class](https://docs.labymod.net/pages/server/protocol/protocol/#utils-class), mentioned in the LabyMod Documentation,
 is already implemented and can be used standalone.

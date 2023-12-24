@@ -19,7 +19,7 @@
     <distributionManagement>
         <repository>
             <id>joshicodes-de-releases</id>
-            <name>JoshiCodes Repository</name>
+            <name>JoshiCodes.de Releases Repository</name>
             <url>https://repo.joshicodes.de/releases</url>
         </repository>
     </distributionManagement>
