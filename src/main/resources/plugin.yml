@@ -1,0 +1,4 @@
+name: NewLabyAPI
+version: '${project.version}'
+main: de.joshicodes.newlabyapi.NewLabyAPI
+api-version: '1.20'
