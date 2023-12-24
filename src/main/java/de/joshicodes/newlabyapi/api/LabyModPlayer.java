@@ -55,6 +55,18 @@ public class LabyModPlayer {
         LabyModAPI.sendPrompt(player, prompt);
     }
 
+    /**
+     * Sends a server banner to the player. <br>
+     * LabyDocs: <a href="https://docs.labymod.net/pages/server/displays/tablist/#server-banner">docs.labymod.net/pages/server/displays/tablist/#server-banner</a>
+     * @param imageUrl The image url
+     *                 Has to be 5:1 ratio, recommended scale is 1280x256
+     */
+    public void sendServerBanner(String imageUrl) {
+        JsonObject object = new JsonObject();
+        object.addProperty("url", imageUrl);
+        LabyModProtocol.sendLabyModMessage(player, "server_banner", object);
+    }
+
     public Player getPlayer() {
         return player;
     }
