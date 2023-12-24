@@ -7,9 +7,7 @@ import io.netty.handler.codec.DecoderException;
 import io.netty.handler.codec.EncoderException;
 import org.bukkit.entity.Player;
 
-import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
-import java.util.UUID;
 
 public class LabyModProtocol {
 
@@ -20,9 +18,21 @@ public class LabyModProtocol {
      * @param messageContent json object content
      */
     public static void sendLabyModMessage(Player player, String key, JsonElement messageContent ) {
+
+        // Send Plugin Message to Player
+        // a String consists of two components:
+        // - varint: the string's length
+        // - byte-array: the string's content
+        //
+        // The packet's data consists of two strings:
+        // - the message's key
+        // - the message's contents
+
+        // Getting the bytes that should be sent
         byte[] bytes = getBytesToSend( key, messageContent.toString() );
 
-        player.sendPluginMessage( NewLabyAPI.getInstance(), "labymod3:main", bytes );
+        // Sending the bytes to the player
+        player.sendPluginMessage( NewLabyPlugin.getInstance(), "labymod3:main", bytes );
 
     }
 

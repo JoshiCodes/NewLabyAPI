@@ -1,9 +1,8 @@
-package de.joshicodes.newlabyapi.api;
+package de.joshicodes.newlabyapi.api.object;
 
-import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
-public class InputPrompt implements LabyProcotolObject {
+public class InputPrompt implements LabyProtocolObject {
 
     private int id;
     private String message;
@@ -24,6 +23,16 @@ public class InputPrompt implements LabyProcotolObject {
         this.value = value;
         this.placeholder = placeholder;
         this.maxLength = maxLength;
+    }
+
+    /**
+     * @param id A unique id for each packet, use a static number and increase it for each prompt request
+     * @param message The message above the text field
+     * @param value The value inside of the text field
+     * @param placeholder A placeholder text inside of the text field if there is no value given
+     */
+    public InputPrompt(final int id, String message, String value, String placeholder) {
+        this(id, message, value, placeholder, 0);
     }
 
     public InputPrompt setMessage(String message) {

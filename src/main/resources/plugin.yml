@@ -1,4 +1,4 @@
-name: NewLabyAPI
+name: NewLabyPlugin
 version: '${project.version}'
-main: de.joshicodes.newlabyapi.NewLabyAPI
+main: de.joshicodes.newlabyapi.NewLabyPlugin
 api-version: '1.20'

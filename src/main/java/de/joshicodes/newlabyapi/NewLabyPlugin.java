@@ -4,9 +4,9 @@ import de.joshicodes.newlabyapi.listener.LabyPluginMessageListener;
 import de.joshicodes.newlabyapi.listener.TestListener;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class NewLabyAPI extends JavaPlugin {
+public final class NewLabyPlugin extends JavaPlugin {
 
-    private static NewLabyAPI instance;
+    private static NewLabyPlugin instance;
 
 
     @Override
@@ -20,9 +20,6 @@ public final class NewLabyAPI extends JavaPlugin {
         getServer().getMessenger().registerIncomingPluginChannel(this, "labymod3:main", new LabyPluginMessageListener());
         getServer().getMessenger().registerOutgoingPluginChannel(this, "labymod3:main");
 
-        // Test
-        getServer().getPluginManager().registerEvents(new TestListener(), this);
-
     }
 
     @Override
@@ -30,12 +27,12 @@ public final class NewLabyAPI extends JavaPlugin {
         // Plugin shutdown logic
     }
 
-    public static NewLabyAPI getInstance() {
+    public static NewLabyPlugin getInstance() {
         return instance;
     }
 
     public static void debug(String s) {
-        NewLabyAPI instance = NewLabyAPI.getInstance();
+        NewLabyPlugin instance = NewLabyPlugin.getInstance();
         if(instance.getConfig().getBoolean("debug")) {
             instance.getLogger().info("[DEBUG] " + s);
         }

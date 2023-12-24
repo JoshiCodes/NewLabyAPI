@@ -1,4 +1,4 @@
-package de.joshicodes.newlabyapi.event.player;
+package de.joshicodes.newlabyapi.api.event.player;
 
 import de.joshicodes.newlabyapi.api.LabyModPlayer;
 import org.bukkit.entity.Player;
@@ -8,8 +8,8 @@ public class LabyModPlayerJoinEvent extends LabyModPlayerEvent {
 
     private final String rawJson;
 
-    public LabyModPlayerJoinEvent(Player player, String version, String json) {
-        super(new LabyModPlayer(player, version));
+    public LabyModPlayerJoinEvent(LabyModPlayer player, String json) {
+        super(player);
         this.rawJson = json;
     }
 

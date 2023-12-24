@@ -1,4 +1,4 @@
-package de.joshicodes.newlabyapi.event.player;
+package de.joshicodes.newlabyapi.api.event.player;
 
 import de.joshicodes.newlabyapi.api.LabyModPlayer;
 import org.bukkit.event.Event;
