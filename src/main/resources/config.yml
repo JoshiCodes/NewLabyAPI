@@ -9,3 +9,26 @@ debug: false
 # This is needed to show new Players stuff like the Subtitle of already joined players. (Essentially just re-sending the packet)
 # If disabled, you will need to implement your own way of updating already joined players
 updateExistingPlayersOnJoin: true
+
+permissions:
+  # If enabled, the selected permissions will be sent to the client on join
+  # If disabled, you have to implement your own way of sending the permissions to the client (if you want to use them)
+  use: false
+
+  list:
+    # Copied from the official LabyMod Server API
+    # All Values from the "LabyModPermission" Enum are valid here.
+    # <EnumName>: <Enabled>
+    # If not found, the default value (provided in the enum) is used.
+    IMPROVED_LAVA: false
+    CROSSHAIR_SYNC: false
+    REFILL_FIX: false
+    GUI_ALL: true
+    GUI_POTION_EFFECTS: true
+    GUI_ARMOR_HUD: true
+    GUI_ITEM_HUD: true
+    BLOCKBUILD: true
+    TAGS: true
+    CHAT: true
+    ANIMATIONS: true
+    SATURATION_BAR: true

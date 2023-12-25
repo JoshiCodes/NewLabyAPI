@@ -64,7 +64,7 @@ public class LabyModPlayer {
 
     /**
      * Sets the Subtitle of this Player for all LabyMod Players.
-     * @param subtitle The subtitle, as String (Minecraft Legacy Colors are supported - &a, &b, etc.)
+     * @param subtitle The subtitle, as String (Minecraft Legacy Colors are supported, e.g. "&amp;a", "&amp;b", etc.)
      * @param size The size of the subtitle
      */
     public void setOwnSubtitle(String subtitle, double size) {
@@ -73,7 +73,7 @@ public class LabyModPlayer {
 
     /**
      * Sets the Subtitle of this Player for all LabyMod Players.
-     * @param subtitle The subtitle, as String (Minecraft Legacy Colors are supported - &a, &b, etc.)
+     * @param subtitle The subtitle, as String (Minecraft Legacy Colors are supported, e.g. "&amp;a", "&amp;b", etc.)
      */
     public void setOwnSubtitle(String subtitle) {
         setOwnSubtitle(subtitle, 0.8d);

@@ -17,7 +17,7 @@ To use this API in your Plugin, you need to add it as a dependency.
 <dependency>
     <groupId>de.joshicodes</groupId>
     <artifactId>NewLabyAPI</artifactId>
-    <version>1.2.3</version>
+    <version>1.2.4</version>
     <scope>provided</scope>
 </dependency>
 ````
@@ -97,6 +97,9 @@ labyPlayer.sendPermissions(HashMap<LabyModPermission, Boolean>);
 // or
 labyPlayer.sendPermission(List<LabyModPermission> allow, List<LabyModPermission> deny);
 ````
+There is already a way implemented to send those permissions on player join.<br>
+To use them, just set ``permissions.use`` to ``true`` in the config.yml. <br>
+After that, you can enable or disable the permissions in the config.yml.
 
 ## Subtitles
 [LabyMod Docs](https://docs.labymod.net/pages/server/displays/subtitles/) <br>
