@@ -17,7 +17,7 @@ To use this API in your Plugin, you need to add it as a dependency.
 <dependency>
     <groupId>de.joshicodes</groupId>
     <artifactId>NewLabyAPI</artifactId>
-    <version>1.2.2</version>
+    <version>1.2.3</version>
     <scope>provided</scope>
 </dependency>
 ````
@@ -48,6 +48,13 @@ At the moment there are the following events:
 - ``InputPromptEvent`` for when a player answers an InputPrompt
 
 ## Included LabyMod Protocol Objects
+
+- [InputPrompt](#inputprompt)
+- [MouseMenuActionList](#mousemenuactionlist)
+- [Server Banner](#server-banner)
+- [Permissions](#permissions)
+- [PlayerSubtitle](#subtitles)
+
 ### InputPrompt
 You can send an InputPrompt to the client, which will ask the player for an input.
 [More Information on the LabyMod Docs](https://docs.labymod.net/pages/server/minecraft/input_prompt/)
@@ -81,3 +88,39 @@ The Banner has to have a ratio of 5:1, recommended size is 1280x256px.
 ````java
 labyPlayer.sendServerBanner("https://example.com/banner.png");
 ````
+
+## Permissions
+[LabyMod Docs](https://docs.labymod.net/pages/server/moderation/permissions/)
+Allows or Denies certain permissions.
+````java
+labyPlayer.sendPermissions(HashMap<LabyModPermission, Boolean>);
+// or
+labyPlayer.sendPermission(List<LabyModPermission> allow, List<LabyModPermission> deny);
+````
+
+## Subtitles
+[LabyMod Docs](https://docs.labymod.net/pages/server/displays/subtitles/)
+Displays a Subtitle to everyone or just a specific player.
+````java
+labyPlayer.sendSubtitle(LabyModPlayerSubtitle...); // Sends the Subtitles to just this player
+labyPlayer.setSubtitle(LabyModPlayerSubtitle); // Sets the subtitle of the player. This updates the subtitle for everyone.
+labyPlayer.clearSubtitle(); // Clears the subtitle of the player. This updates the subtitle for everyone.
+
+````
+
+<br><br><br>
+
+# Possible Deprecated, broken or not implemented features
+### These features are not tested and may not work as expected.
+### It is possible those features are not available in the current version of LabyMod.
+### The Documentation of those features still exists on the LabyMod Docs.
+
+- [Playing Gamemode](#playing-gamemode)
+
+## Playing Gamemode
+[Labymod Docs](https://docs.labymod.net/pages/server/labymod/gamemode/)
+Displays the current playing gamemode to the player.<br>
+````java
+labyPlayer.setCurrentPlayingGamemode("Gamemode");
+````
+
