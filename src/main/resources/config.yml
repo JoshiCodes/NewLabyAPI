@@ -22,13 +22,13 @@ extendActionMenu:
   use: false
 
   # The actions to add to the ActionMenu
-  content:
+  list:
     - display: 'Report Player'              # The display name of the action
       action: SUGGEST_COMMAND               # The action type, see https://github.com/JoshiCodes/NewLabyAPI/blob/master/src/main/java/de/joshicodes/newlabyapi/api/mouse/MouseMenuActionType.java
-      value: '/report {player} >Reason<'    # The value of the action, use {player} for the player name
+      value: '/report {name} >Reason<'    # The value of the action, use {name} for the player name
     - display: 'Kick Player'
       action: RUN_COMMAND
-      value: '/kick {player}'
+      value: '/kick {name}'
       requiresPermission: 'system.kick'    # The permission required to see the action
 
 

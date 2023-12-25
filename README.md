@@ -75,7 +75,7 @@ MouseMenuActionList menu = new MouseMenuActionList();
 menu.addAction(
         "Report player",
         MouseMenuActionType.SUGGEST_COMMAND,
-        "/report {player}"
+        "/report {name}"
 );
 // Send to player
 labyPlayer.sendActionMenu(menu);
