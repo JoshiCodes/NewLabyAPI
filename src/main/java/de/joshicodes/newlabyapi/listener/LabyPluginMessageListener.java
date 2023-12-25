@@ -7,7 +7,6 @@ import de.joshicodes.newlabyapi.NewLabyPlugin;
 import de.joshicodes.newlabyapi.api.LabyModAPI;
 import de.joshicodes.newlabyapi.api.LabyModPlayer;
 import de.joshicodes.newlabyapi.api.event.InputPromptEvent;
-import de.joshicodes.newlabyapi.api.event.player.LabyModPlayerJoinEvent;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import org.bukkit.entity.Player;
@@ -15,7 +14,6 @@ import org.bukkit.plugin.messaging.PluginMessageListener;
 
 import java.io.ByteArrayInputStream;
 import java.io.DataInputStream;
-import java.util.UUID;
 
 public class LabyPluginMessageListener implements PluginMessageListener {
 
@@ -44,20 +42,6 @@ public class LabyPluginMessageListener implements PluginMessageListener {
             }
         }
 
-    }
-
-    /**
-     * Add a secret key to the json object
-     * @param jsonObject json object
-     * @param hasKey has key name
-     * @param key key name
-     * @param secret the secret key
-     * @return json object
-     */
-    public JsonObject addSecret(JsonObject jsonObject, String hasKey, String key, UUID secret, String domain) {
-        jsonObject.addProperty( hasKey, true );
-        jsonObject.addProperty( key, secret.toString() + ":" + domain );
-        return jsonObject;
     }
 
 }
