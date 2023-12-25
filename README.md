@@ -56,7 +56,7 @@ At the moment there are the following events:
 - [PlayerSubtitle](#subtitles)
 
 ### InputPrompt
-You can send an InputPrompt to the client, which will ask the player for an input.
+You can send an InputPrompt to the client, which will ask the player for an input. <br>
 [More Information on the LabyMod Docs](https://docs.labymod.net/pages/server/minecraft/input_prompt/)
 ````java
 // ID (int, unique for each player), Message (String, shown to the player), Value (String, default value), Placeholder (String, placeholder)
@@ -68,7 +68,7 @@ labyPlayer.sendInputPrompt(prompt);
 ````
 
 ## MouseMenuActionList
-Modify the Middle Click Menu of the player.
+Modify the Middle Click Menu of the player. <br>
 [More Information on the LabyMod Docs](https://docs.labymod.net/pages/server/labymod/action_menu/)
 ````java
 MouseMenuActionList menu = new MouseMenuActionList();
@@ -82,7 +82,7 @@ labyPlayer.sendActionMenu(menu);
 ````
 
 ## Server Banner
-Sends a Server Banner to the client.
+Sends a Server Banner to the client. <br>
 [More Information on the LabyMod Docs](https://docs.labymod.net/pages/server/displays/tablist/#server-banner)
 The Banner has to have a ratio of 5:1, recommended size is 1280x256px.
 ````java
@@ -90,7 +90,7 @@ labyPlayer.sendServerBanner("https://example.com/banner.png");
 ````
 
 ## Permissions
-[LabyMod Docs](https://docs.labymod.net/pages/server/moderation/permissions/)
+[LabyMod Docs](https://docs.labymod.net/pages/server/moderation/permissions/) <br>
 Allows or Denies certain permissions.
 ````java
 labyPlayer.sendPermissions(HashMap<LabyModPermission, Boolean>);
@@ -99,7 +99,7 @@ labyPlayer.sendPermission(List<LabyModPermission> allow, List<LabyModPermission>
 ````
 
 ## Subtitles
-[LabyMod Docs](https://docs.labymod.net/pages/server/displays/subtitles/)
+[LabyMod Docs](https://docs.labymod.net/pages/server/displays/subtitles/) <br>
 Displays a Subtitle to everyone or just a specific player.
 ````java
 labyPlayer.sendSubtitle(LabyModPlayerSubtitle...); // Sends the Subtitles to just this player
@@ -118,7 +118,7 @@ labyPlayer.clearSubtitle(); // Clears the subtitle of the player. This updates t
 - [Playing Gamemode](#playing-gamemode)
 
 ## Playing Gamemode
-[Labymod Docs](https://docs.labymod.net/pages/server/labymod/gamemode/)
+[Labymod Docs](https://docs.labymod.net/pages/server/labymod/gamemode/) <br>
 Displays the current playing gamemode to the player.<br>
 ````java
 labyPlayer.setCurrentPlayingGamemode("Gamemode");
