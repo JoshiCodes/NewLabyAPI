@@ -1,5 +1,6 @@
 package de.joshicodes.newlabyapi;
 
+import de.joshicodes.newlabyapi.api.LabyModAPI;
 import de.joshicodes.newlabyapi.listener.LabyPluginMessageListener;
 import de.joshicodes.newlabyapi.listener.PlayerListener;
 import org.bukkit.plugin.PluginManager;
@@ -17,6 +18,8 @@ public final class NewLabyPlugin extends JavaPlugin {
         if(!getDataFolder().exists())
             getDataFolder().mkdir();
         saveDefaultConfig();
+
+        LabyModAPI.init(this);
 
         getServer().getMessenger().registerIncomingPluginChannel(this, "labymod3:main", new LabyPluginMessageListener());
         getServer().getMessenger().registerOutgoingPluginChannel(this, "labymod3:main");

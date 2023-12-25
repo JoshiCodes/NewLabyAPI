@@ -4,3 +4,8 @@
 
 # Enable Debug Messages, this could spam your console!
 debug: false
+
+# Specifies if already existing players should be updated on join
+# This is needed to show new Players stuff like the Subtitle of already joined players. (Essentially just re-sending the packet)
+# If disabled, you will need to implement your own way of updating already joined players
+updateExistingPlayersOnJoin: true
