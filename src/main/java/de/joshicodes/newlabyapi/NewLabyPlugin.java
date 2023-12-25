@@ -2,7 +2,7 @@ package de.joshicodes.newlabyapi;
 
 import de.joshicodes.newlabyapi.api.LabyModAPI;
 import de.joshicodes.newlabyapi.listener.LabyPluginMessageListener;
-import de.joshicodes.newlabyapi.listener.PermissionListener;
+import de.joshicodes.newlabyapi.listener.ConfigListener;
 import de.joshicodes.newlabyapi.listener.PlayerListener;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -28,9 +28,7 @@ public final class NewLabyPlugin extends JavaPlugin {
         PluginManager pluginManager = getServer().getPluginManager();
         pluginManager.registerEvents(new PlayerListener(), this);
 
-        if(getConfig().getBoolean("permissions.use", false)) {
-            pluginManager.registerEvents(new PermissionListener(getConfig()), this);
-        }
+        pluginManager.registerEvents(new ConfigListener(getConfig()), this);
 
     }
 

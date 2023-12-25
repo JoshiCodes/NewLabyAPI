@@ -10,6 +10,28 @@ debug: false
 # If disabled, you will need to implement your own way of updating already joined players
 updateExistingPlayersOnJoin: true
 
+serverBanner:
+  # If enabled, sends the provided image to the client on join
+  send: false
+  # The URL of the Image to send. Recommended size is 1280x256px.
+  url: 'example.com/image.png' # Has to be 5:1 Ratio
+
+
+extendActionMenu:
+  # If enabled, the selected actions will be added to the ActionMenu
+  use: false
+
+  # The actions to add to the ActionMenu
+  content:
+    - display: 'Report Player'              # The display name of the action
+      action: SUGGEST_COMMAND               # The action type, see https://github.com/JoshiCodes/NewLabyAPI/blob/master/src/main/java/de/joshicodes/newlabyapi/api/mouse/MouseMenuActionType.java
+      value: '/report {player} >Reason<'    # The value of the action, use {player} for the player name
+    - display: 'Kick Player'
+      action: RUN_COMMAND
+      value: '/kick {player}'
+      requiresPermission: 'system.kick'    # The permission required to see the action
+
+
 permissions:
   # If enabled, the selected permissions will be sent to the client on join
   # If disabled, you have to implement your own way of sending the permissions to the client (if you want to use them)

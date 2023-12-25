@@ -26,6 +26,10 @@ public class MouseMenuActionList implements LabyProtocolObject {
         actions.put(key, new MouseMenuAction(type, value));
     }
 
+    public boolean isEmpty() {
+        return actions.isEmpty();
+    }
+
     public HashMap<String, MouseMenuAction> getActionMap() {
         return actions;
     }
