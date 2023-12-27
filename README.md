@@ -1,6 +1,13 @@
 # NewLabyAPI
 ### This is a simple Labymod API for LabyMod 4 for Paper 1.20.2
 
+- [Download & Install](#download)
+  - [Maven](#maven)
+<br><b>API</b>
+- [How to use](#how-to-use)
+- [Events](#events)
+- [Included LabyMod Protocol Objects](#included-labymod-protocol-objects)
+
 ## Download
 To use this API you need the plugin jar File on your Server.
 You can download the latest file [here](https://github.com/JoshiCodes/NewLabyAPI/releases).
@@ -127,3 +134,8 @@ Displays the current playing gamemode to the player.<br>
 labyPlayer.setCurrentPlayingGamemode("Gamemode");
 ````
 
+<br><br><br>
+
+## Contribute
+Feel free to contribute in any way you like, just create a pull request or just create an issue.
+I will try to keep an eye on everything, but may take some time to respond.
