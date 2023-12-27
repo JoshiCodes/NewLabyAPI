@@ -1,12 +1,22 @@
 # NewLabyAPI
 ### This is a simple Labymod API for LabyMod 4 for Paper 1.20.2
 
+<br>
+
+- [Why?](#why)
 - [Download & Install](#download)
-  - [Maven](#maven)
-<br><b>API</b>
+    
+<b>API</b>
+- [Maven](#maven)
 - [How to use](#how-to-use)
 - [Events](#events)
 - [Included LabyMod Protocol Objects](#included-labymod-protocol-objects)
+
+## Why?
+As you may already know, there is [an official LabyMod Server API](https://github.com/LabyMod/labymod-server-api). So why create another one?
+It seems that the original does not work with current Versions of minecraft and is also made to work with LabyMod 3 (it should still work with Laby 4 tho).
+As far as i can tell, there is [another third-party LabyMod Server API](https://www.spigotmc.org/resources/labymod-server-api-1-8-1-17-1.92724/), but this one still does not seem to work with 1.20.2.
+I do hope that LabyMod creates a new Server Plugin for their new API and keeps it up to date, until then, my go-to solution will be this repository.
 
 ## Download
 To use this API you need the plugin jar File on your Server.
