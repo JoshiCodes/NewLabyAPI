@@ -31,7 +31,7 @@ public class ConfigListener implements Listener {
             }
             event.getPlayer().sendPermissions(permissions);
         }
-        if (config.getBoolean("serverBanner.use", false))
+        if (config.getBoolean("serverBanner.send", false))
             event.getPlayer().sendServerBanner(config.getString("serverBanner.url"));
         if (config.getBoolean("extendActionMenu.use", false)) {
             MouseMenuActionList list = new MouseMenuActionList();

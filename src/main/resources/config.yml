@@ -5,6 +5,11 @@
 # Enable Debug Messages, this could spam your console!
 debug: false
 
+updateChecks:
+  enabled: true # If enabled, the plugin will check for updates on startup
+  joinNotify: true # If enabled, a notification will be sent to players with the required permission on join
+  joinNotifyPerm: 'newlabyapi.update' # The permission required to see the update notification on join
+
 # Specifies if already existing players should be updated on join
 # This is needed to show new Players stuff like the Subtitle of already joined players. (Essentially just re-sending the packet)
 # If disabled, you will need to implement your own way of updating already joined players
