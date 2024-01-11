@@ -100,7 +100,7 @@ labyPlayer.sendActionMenu(menu);
 
 ## Server Banner
 Sends a Server Banner to the client. <br>
-[More Information on the LabyMod Docs](https://docs.labymod.net/pages/server/displays/tablist/#server-banner)
+[More Information on the LabyMod Docs](https://docs.labymod.net/pages/server/displays/tablist/#server-banner) <br>
 The Banner has to have a ratio of 5:1, recommended size is 1280x256px.
 ````java
 labyPlayer.sendServerBanner("https://example.com/banner.png");
