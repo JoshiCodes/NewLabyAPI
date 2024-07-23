@@ -1,12 +1,10 @@
 # NewLabyAPI
-### This is a simple Labymod API for LabyMod 4 for Paper 1.20.2
 
-<a href="https://github.com/JoshiCodes/NewLabyAPI/releases/latest">
-    <img alt="GitHub Release" src="https://img.shields.io/github/v/release/JoshiCodes/NewLabyAPI?include_prereleases">
-</a>
-<a href="https://www.spigotmc.org/resources/newlabyapi.118310/">
-    <img alt="Static Badge" src="https://img.shields.io/badge/Spigot-download-yellow">
-</a>
+<a href="https://github.com/JoshiCodes/NewLabyAPI/releases/latest"><img alt="GitHub Release" src="https://img.shields.io/github/v/release/JoshiCodes/NewLabyAPI?include_prereleases"></a>
+<a href="https://www.spigotmc.org/resources/newlabyapi.118310/"><img alt="Static Badge" src="https://img.shields.io/badge/Spigot-download-yellow"></a>
+<br>
+
+### This is a simple Labymod API for LabyMod 4 for Paper 1.20.2
 
 <br>
 
