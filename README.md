@@ -1,6 +1,11 @@
 # NewLabyAPI
 ### This is a simple Labymod API for LabyMod 4 for Paper 1.20.2
 
+> [!Note]
+> 
+> There now seems to be a [new official LabyMod Server API](https://github.com/LabyMod/labymod4-server-api) for LabyMod 4. <br>
+> This plugin will no longer be updated, as the official API should be the better choice.
+
 <br>
 
 - [Why?](#why)
