@@ -1,4 +1,9 @@
 # NewLabyAPI
+
+<a href="https://github.com/JoshiCodes/NewLabyAPI/releases/latest"><img alt="GitHub Release" src="https://img.shields.io/github/v/release/JoshiCodes/NewLabyAPI?include_prereleases"></a>
+<a href="https://www.spigotmc.org/resources/newlabyapi.118310/"><img alt="Static Badge" src="https://img.shields.io/badge/Spigot-download-yellow"></a>
+<br>
+
 ### This is a simple Labymod API for LabyMod 4 for Paper 1.20.2
 
 > [!Note]
@@ -105,7 +110,7 @@ labyPlayer.sendActionMenu(menu);
 
 ## Server Banner
 Sends a Server Banner to the client. <br>
-[More Information on the LabyMod Docs](https://docs.labymod.net/pages/server/displays/tablist/#server-banner)
+[More Information on the LabyMod Docs](https://docs.labymod.net/pages/server/displays/tablist/#server-banner) <br>
 The Banner has to have a ratio of 5:1, recommended size is 1280x256px.
 ````java
 labyPlayer.sendServerBanner("https://example.com/banner.png");
